@@ -1,5 +1,5 @@
 import argparse
-
+from modules import print_ver
 def get_args() -> dict:
     # parser defined here , 
 
@@ -41,3 +41,19 @@ def get_args() -> dict:
         , help='will scan all sub directories for videos as well'
     )
 
+    args = parser.parse_args() # read arguments
+    if args.version: # check if version is asked
+        print_ver.show()
+    target_dir = args.target_directory # target directory
+    types = [] # empty list defined
+    if args.types == 'all': # file types
+        types.append('mp4','mkv','mpg','mpeg','3gp','mov','avi','ts')
+    else:
+        for t in args.types.split(','):
+            types.append(t)
+    sub_dir = args.sub_directories
+    return {
+        target_dir : target_dir
+        , types : types
+        , sub_dir : sub_dir
+        }
