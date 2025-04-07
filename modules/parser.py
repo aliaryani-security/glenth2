@@ -20,7 +20,7 @@ def get_args() -> dict:
 
     # show version option
     parser.add_argument(
-        '-v'
+        '-V'
         , '--version'
         , help='prints current version and exits'
         , action='store_true'
@@ -42,6 +42,14 @@ def get_args() -> dict:
         , action='store_true'
     )
 
+    parser.add_argument (
+        '-v'
+        , '--verbose'
+        , help='show more details'
+        , action='store_true'
+
+    )
+
     args = parser.parse_args() # read arguments
     if args.version: # check if version is asked
         print_ver.show()
@@ -54,8 +62,10 @@ def get_args() -> dict:
         for t in args.types.split(','):
             types.append(t)
     sub_dir = args.sub_directories
+    verbose = args.verbose
     return {
         'target_dir' : target_dir
         , 'types' : types
         , 'sub_dir' : sub_dir
+        , 'verbose' : verbose
         }

@@ -10,4 +10,4 @@ files_list = find_vid.search(
     , parser_arguments['types']
     )
 
-get_length.give_me_the_lengths(files_list)
+get_length.give_me_the_lengths(files_list,parser_arguments['verbose'])

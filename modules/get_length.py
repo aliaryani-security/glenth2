@@ -1,7 +1,7 @@
 import subprocess
 from modules import conv
 
-def give_me_the_lengths(vid_list:list):
+def give_me_the_lengths(vid_list:list, verbose=False):
     time = 0.0
     for v in vid_list:
         v_time = subprocess.run([""
@@ -21,6 +21,7 @@ def give_me_the_lengths(vid_list:list):
             time += float(v_time.stdout)
         except:
             continue
-        v_time = conv.ert(v_time.stdout)
-        print (f"👉 \033[33m[{v}]\033[39m ==> \033[34m{v_time['hr']} hours and {v_time['mn']} minutes\033[39m\n")
+        if verbose:
+            v_time = conv.ert(v_time.stdout)
+            print (f"👉 \033[33m[{v}]\033[39m ==> \033[34m{v_time['hr']} hours and {v_time['mn']} minutes\033[39m\n")
     print (f"💠 Total : \033[32m{conv.ert(time)['hr']} hours and {conv.ert(time)['mn']} minutes\033[39m")
