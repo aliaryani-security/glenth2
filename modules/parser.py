@@ -17,9 +17,19 @@ parser.add_argument(
     , help='choose a directory to search for videos (default is current directory.)'
 )
 
-# show version
+# show version option
 parser.add_argument(
     '-v'
     , '--version'
     , help='prints current version and exits'
+    , action='store_true'
 )
+
+# choose types option
+parser.add_argument (
+    '-t'
+    , '--types'
+    , default='all'
+    , help='video extensions to search for (seperate with commas (e.g. mp4,mkv)) (default is all possible videos)'
+)
+
