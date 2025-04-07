@@ -34,3 +34,10 @@ def get_args() -> dict:
         , help='video extensions to search for (seperate with commas (e.g. mp4,mkv)) (default is all possible videos)'
     )
 
+    # sub directories option
+    parser.add_argument(
+        '-s'
+        , '--sub-directories'
+        , help='will scan all sub directories for videos as well'
+    )
+
