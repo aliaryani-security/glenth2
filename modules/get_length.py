@@ -17,7 +17,10 @@ def give_me_the_lengths(vid_list:list):
         , stdout=subprocess.PIPE
         , stderr=subprocess.STDOUT
                                 )
-        time += float(v_time.stdout)
+        try:
+            time += float(v_time.stdout)
+        except:
+            continue
         v_time = conv.ert(v_time.stdout)
         print (f"{v} ==> {v_time['hr']} hours and {v_time['mn']} minutes\n")
     print (f"Total : {conv.ert(time)['hr']} hours and {conv.ert(time)['mn']} minutes")

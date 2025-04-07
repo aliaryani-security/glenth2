@@ -39,6 +39,7 @@ def get_args() -> dict:
         '-s'
         , '--sub-directories'
         , help='will scan all sub directories for videos as well'
+        , action='store_true'
     )
 
     args = parser.parse_args() # read arguments
