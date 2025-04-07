@@ -47,13 +47,14 @@ def get_args() -> dict:
     target_dir = args.target_directory # target directory
     types = [] # empty list defined
     if args.types == 'all': # file types
-        types.append('mp4','mkv','mpg','mpeg','3gp','mov','avi','ts')
+        for item in ['mp4','mkv','mpg','mpeg','3gp','mov','avi','ts']:
+            types.append(item)
     else:
         for t in args.types.split(','):
             types.append(t)
     sub_dir = args.sub_directories
     return {
-        target_dir : target_dir
-        , types : types
-        , sub_dir : sub_dir
+        'target_dir' : target_dir
+        , 'types' : types
+        , 'sub_dir' : sub_dir
         }
