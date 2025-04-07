@@ -28,7 +28,7 @@ glenth2 [ options ]
 -d    --target-directory <directory>    choose a directory to scan
 -t    --types        choose custom file types to scan for
 ```
-<br>
+
 ## Installation and requirements ⚙
 🎈 it's a python script , use can simply run it using `./main.py`<br>
 💎 if you want to install it system-wide , use the following :
