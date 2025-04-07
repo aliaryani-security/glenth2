@@ -15,7 +15,7 @@
 * verbose mode : by using this option , you can see the length of every single file as well 👁
 * new theme : previous version had color problems with some shells , this new one has not. it uses simple colors that work everywhere 🎨
 * custom file types : in this new version , you can choose any video types you want , and `glenth2` will scan for those only 🔍
-<br>
+
 ## Usage 👨‍💻
 By default , `glenth2` scans for all video files in the current directory. <br>
 ```sh
