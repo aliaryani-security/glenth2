@@ -1,5 +1,7 @@
 #!/bin/env python3
-from modules import find_vid,get_length,parser
+from modules import find_vid,get_length,parser,banner
+banner.show()
+
 parser_arguments = parser.get_args()
 
 files_list = find_vid.search(
