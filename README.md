@@ -1,7 +1,7 @@
 # GLENTH2
-```
-🎈 This project was originally <a href="https://github.com/theHannibalist/glenth>`glenth`</a> , but due to unclear and unimprovable coding that I made there , I decided to rewrite it entirely.
-```
+
+🎈 This project was originally https://github.com/theHannibalist/glenth , but due to unclear and unimprovable coding that I made there , I decided to rewrite it entirely.
+
 <br><br>
 💎 `glenth2` comes with lots of improvements and new features :<br>
 ## Introducing `glenth2` and it's features 🧩
@@ -38,4 +38,4 @@ ln -s /path/to/glenth2/main.py /usr/bin/glenth2
 <br><br>
 🪐 before using this beauty, make sure you have `ffmpeg` installed 😉
 ## a few words ✍
-I will be happy if you follow me on <a href="https://instagram.com/aliaryani.security"my instagram></a> ♥
+I will be happy if you follow me on my Instagram ♥
