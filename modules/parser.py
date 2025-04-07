@@ -16,3 +16,10 @@ parser.add_argument(
     , default='.'
     , help='choose a directory to search for videos (default is current directory.)'
 )
+
+# show version
+parser.add_argument(
+    '-v'
+    , '--version'
+    , help='prints current version and exits'
+)
