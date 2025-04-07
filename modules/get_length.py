@@ -22,5 +22,5 @@ def give_me_the_lengths(vid_list:list):
         except:
             continue
         v_time = conv.ert(v_time.stdout)
-        print (f"{v} ==> {v_time['hr']} hours and {v_time['mn']} minutes\n")
-    print (f"Total : {conv.ert(time)['hr']} hours and {conv.ert(time)['mn']} minutes")
+        print (f"👉 \033[33m[{v}]\033[39m ==> \033[34m{v_time['hr']} hours and {v_time['mn']} minutes\033[39m\n")
+    print (f"💠 Total : \033[32m{conv.ert(time)['hr']} hours and {conv.ert(time)['mn']} minutes\033[39m")
