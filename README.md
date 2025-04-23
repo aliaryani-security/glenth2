@@ -1,6 +1,6 @@
 # GLENTH2
 
-🎈 You ever wondered how long does it take to watch the videos you have in a folder ?<br>Then `gletnh` is for you !<br><br>glenth was originally https://github.com/aliaryani-security/glenth , but it was full of bugs and bad coding ,<br>so I decided to rewrite it entirely.
+🎈 You ever wondered how long does it take to watch the videos you have in a folder ?<br>Then `glenth` is for you !<br><br>glenth was originally https://github.com/aliaryani-security/glenth , but it was full of bugs and bad coding ,<br>so I decided to rewrite it entirely.
 
 <br><br>
 💎 `glenth2` comes with lots of improvements and new features :<br>
