@@ -1,6 +1,6 @@
 # GLENTH2
 
-🎈 This project was originally https://github.com/theHannibalist/glenth , but due to unclear and unimprovable coding that I made there , I decided to rewrite it entirely.
+🎈 You ever wondered how long does it take to watch the videos you have in a folder ?<br>Then `gletnh` is for you !<br><br>glenth was originally https://github.com/aliaryani-security/glenth , but it was full of bugs and bad coding ,<br>so I decided to rewrite it entirely.
 
 <br><br>
 💎 `glenth2` comes with lots of improvements and new features :<br>
@@ -31,6 +31,14 @@ glenth2 [ options ]
 
 ## Installation and requirements ⚙
 🎈 it's a python script , use can simply run it using `./main.py`<br>
+* clone it using the following :
+```sh
+git clone https://github.com/aliaryani-security/glenth2
+```
+* OR if you use github client :
+```sh
+gh repo clone aliaryani-security/glenth2
+```
 💎 if you want to install it system-wide , use the following :
 ```sh
 ln -s /path/to/glenth2/main.py /usr/bin/glenth2
@@ -38,4 +46,5 @@ ln -s /path/to/glenth2/main.py /usr/bin/glenth2
 <br><br>
 🪐 before using this beauty, make sure you have `ffmpeg` installed 😉
 ## a few words ✍
-I will be happy if you follow me on my Instagram ♥
+I will be happy if you follow me on my Instagram ♥<br>
+`https://instagram.com/aliaryani-security`
