@@ -41,7 +41,8 @@ gh repo clone aliaryani-security/glenth2
 ```
 💎 if you want to install it system-wide , use the following :
 ```sh
-ln -s /path/to/glenth2/main.py /usr/bin/glenth2
+sudo git clone https://github.com/aliaryani-security/glenth2 /opt/glenth2
+sudo ln -s /opt/glenth2/main.py /usr/bin/glenth2
 ```
 <br><br>
 🪐 before using this beauty, make sure you have `ffmpeg` installed 😉
