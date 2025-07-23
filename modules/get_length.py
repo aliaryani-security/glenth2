@@ -1,5 +1,6 @@
 import subprocess
 from modules import conv
+from modules import bottom_line
 
 def give_me_the_lengths(vid_list:list, verbose=False):
     time = 0.0
@@ -24,4 +25,6 @@ def give_me_the_lengths(vid_list:list, verbose=False):
         if verbose:
             v_time = conv.ert(v_time.stdout)
             print (f"👉 \033[33m[{v}]\033[39m ==> \033[34m{v_time['hr']} hours and {v_time['mn']} minutes\033[39m\n")
-    print (f"💠 Total : \033[32m{conv.ert(time)['hr']} hours and {conv.ert(time)['mn']} minutes\033[39m")
+        bottom_line.update_bottom_line ("💠 Total : \033[32m{} hours and {} minutes\033[39m".format(conv.ert(time)['hr'],conv.ert(time)['mn']))
+    # print (f"💠 Total : \033[32m{conv.ert(time)['hr']} hours and {conv.ert(time)['mn']} minutes\033[39m")
+    
