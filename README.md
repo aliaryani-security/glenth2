@@ -43,6 +43,7 @@ gh repo clone aliaryani-security/glenth2
 ```sh
 sudo git clone https://github.com/aliaryani-security/glenth2 /opt/glenth2
 sudo ln -s /opt/glenth2/main.py /usr/bin/glenth2
+sudo chmod +x /opt/glenth2/main.py
 ```
 <br><br>
 🪐 before using this beauty, make sure you have `ffmpeg` installed 😉
